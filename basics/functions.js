@@ -21,13 +21,13 @@
 
 // signUp();
 
-function max(nr1 = 0, nr2 = 0){
-   if(nr1 > nr2){
-      return nr1;
-   }else{
-      return nr2;
-   }
-}
-let inbox = max(1, 50)
+// function max(nr1 = 0, nr2 = 0){
+//    if(nr1 > nr2){
+//       return nr1;
+//    }else{
+//       return nr2;
+//    }
+// }
+// let inbox = max(1, 50)
 
-console.log(inbox)
+// console.log(inbox)
