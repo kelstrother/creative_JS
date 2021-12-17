@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   background: linear-gradient(120deg, #a38d43, #255977);
+   color: #333;
+   font-family: "Poppins";
+   min-height: 100vh;
+}
+header {
+   font-size: 1.5rem;
+}
+header,
+form {
+   min-height: 20vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+input {
+   border-radius: 5px 0 0 5px;
+}
+button {
+   border-radius: 0 5px 5px 0;
+}
+form input, form button {
+   font-family: "Poppins";
+   padding: 0.5rem;
+   font-size: 2rem;
+   border: none;
+   background: rgba(255,255,255,1);
+}
+form button {
+   color: #255977;
+   background: white;
+   cursor: pointer;
+   transition: all 0.3s ease;
+}
+form button:hover {
+   background: #255977;
+   color: white;
+}
+.todo-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.todo-list {
+   min-width: 30%;
+   list-style: none;
+}
+.todo {
+   box-shadow: 1px 3px 15px rgba(0,0,0,0.15);
+   font-weight: 600;
+   letter-spacing: 0.75px;
+   margin: 1rem;
+   background: rgba(255, 255, 255, 0.4);
+   border-radius: 5px;
+   color: #1b465f;
+   font-size: 1.75rem;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+}
+.todo li {
+   flex: 1;
+}
+.todo-item {
+   padding: 0 0.5rem;
+}
+.trash-btn,
+.completed-btn {
+   /* background: #255977; */
+   /* background: #a38d43; */
+   background: #000000a2;
+   /* color: #a38d43; */
+   /* color: #1b465f; */
+   /* border: none; */
+   padding: 1rem;
+   cursor: pointer;
+   font-size: 1.5rem;
+   /* border-radius: 10px; */
+}
+.completed-btn {
+   color: rgb(11, 172, 11);
+   border-right: 1px solid rgba(255, 255, 255, 0.192);
+   border-radius: 5px 0 0 5px;
+}
+.trash-btn {
+   color: rgb(187, 17, 17);
+   border-left: 1px solid rgba(255, 255, 255, 0.192);
+   border-radius: 0 5px 5px 0;
+}
