@@ -4,13 +4,19 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
    <title>DOM Lecture</title>
 </head>
 <body>
-   <ul id="todo-list">
-      <li class="list-item">homework</li>
-      <li class="list-item">grocery shopping</li>
-   </ul>
-   <script src="dom.js"></script>
+   <h1 class="main-title">The Fucking Todo's</h1>
+   <ul id="todo-list"></ul>
+   <form>
+      <input type="text" name="name" class="name-input" />
+      <button id="submit">add</button>
+   </form>
+   <h2 class="todo-nr">How many todo's todo: <b></b></h2>
+   
+   <script src="events.js"></script>
+   <!-- <script src="dom.js"></script> -->
 </body>
 </html>

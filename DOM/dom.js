@@ -1,11 +1,11 @@
 
-// ! HTML COLLECTION
-const collectionItems = document.getElementsByClassName("list-item");
-const todoList = document.getElementById('todo-list')
+// // ! HTML COLLECTION
+// const collectionItems = document.getElementsByClassName("item");
+// const todoList = document.getElementById('todo-list')
 
-//^ CREATE A NEW ITEM WITH JAVASCRIPT
-const newItem = document.createElement('li');
-newItem.classList.add('list-item');
-newItem.innerText = 'study';
+// //^ CREATE A NEW ITEM WITH JAVASCRIPT
+// const newItem = document.createElement('li');
+// newItem.classList.add('item');
+// newItem.innerText = 'study';
 
-todoList.appendChild(newItem);
+// todoList.appendChild(newItem);
