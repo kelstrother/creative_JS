@@ -66,6 +66,7 @@ form button:hover {
    display: flex;
    justify-content: space-evenly;
    align-items: center;
+   transition: all 0.25s ease;
 }
 .todo li {
    flex: 1;
@@ -75,16 +76,10 @@ form button:hover {
 }
 .trash-btn,
 .completed-btn {
-   /* background: #255977; */
-   /* background: #a38d43; */
    background: #000000a2;
-   /* color: #a38d43; */
-   /* color: #1b465f; */
-   /* border: none; */
    padding: 1rem;
    cursor: pointer;
    font-size: 1.5rem;
-   /* border-radius: 10px; */
 }
 .completed-btn {
    color: rgb(11, 172, 11);
@@ -95,4 +90,18 @@ form button:hover {
    color: rgb(187, 17, 17);
    border-left: 1px solid rgba(255, 255, 255, 0.192);
    border-radius: 0 5px 5px 0;
+}
+.fa-trash, .fa-check {
+   pointer-events: none;
+}
+.completed {
+   text-decoration: line-through;
+   opacity: 0.7;
+   background-color: transparent;
+   border: none;
+   box-shadow: none;
+}
+.fall {
+   transform: translateY(8rem) rotateZ(20deg);
+   opacity: 0;
 }

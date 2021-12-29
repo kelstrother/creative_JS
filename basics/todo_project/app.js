@@ -7,6 +7,7 @@ const todoList = document.querySelector('.todo-list');
 //?   EVENT LISTENERS
 
 todoButton.addEventListener('click', addTodo);
+todoList.addEventListener('click', deleteCheck);
 
 //^   FUNCTIONS
 
@@ -35,4 +36,22 @@ function addTodo(e) {
    // APPEND GENERATED HTML TO ORIGINAL LIST
    todoList.appendChild(todoDiv);
    todoInput.value = "";
+}
+function deleteCheck(e) {
+   const item = e.target;
+   // ! DELETE TODO ITEM
+   if (item.classList[0] === 'trash-btn') {
+      const todo = item.parentElement;
+      // ANIMATION
+      todo.classList.add("fall");
+      todo.addEventListener('transitionend', function(){
+         todo.remove();
+      })
+   }
+   // ! COMPLETE ITEM
+   if (item.classList[0] === "completed-btn") {
+      const todo = item.parentElement;
+      todo.classList.toggle("completed");
+   }
+   // console.log("completed")
 }
