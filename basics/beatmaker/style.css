@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Luckiest+Guy&family=Monoton&family=Moo+Lah+Lah&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Beastly&display=swap');
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body {
+   background-color: rgb(17, 17, 17);
+   color: rgb(169, 183, 187);
+   font-family: 'cabin sketch';
+}
+.header {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 5rem 0 4rem 0;
+}
+.title {
+   /* border: 2px outset rgb(255, 237, 79); */
+   /* font-family: 'Luckiest Guy'; */
+   /* font-family: 'Cabin Sketch'; */
+   /* font-family: 'Rubik Beastly'; */
+   font-family: 'Moo Lah Lah';
+   /* font-family: 'Monoton'; */
+   color: rgb(37, 211, 255);
+   font-size: 6rem;
+   letter-spacing: 4px;
+}
