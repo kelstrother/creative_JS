@@ -50,6 +50,13 @@ const games = [
 // })
 // console.log(newVideos);
 
+// ! MAP /// W ARROW FUNCTION
+
+// const newVideos = videos.map((video) => {
+//    return video.toUpperCase()
+// })
+// console.log(newVideos);
+
 // const newVideos = videos.map(function(video){
 //    if(video.length < 10){
 //       return video
@@ -75,27 +82,54 @@ const games = [
 
 // console.log(searchTutorial);
 
+//!   FIND W ARROW FUNCTION
+
+// const shortTitle = videos.find((video) => {
+//    return video.length < 4;
+// })
+// console.log(shortTitle);
+
 //!   FILTER
 
 // const shortSearch = videos.filter(function(video){
 //    return video.length < 10;
 // })
+
+// const shortSearch = videos.filter((video) => {
+//    return video.length < 10;
+// })
+
 // console.log(shortSearch);
 
 // const highRating = games.filter(function(game){
 //    return game.rating > 9
 // })
+
+// const highRating = games.filter((game) => {
+//    return game.rating < 9;
+// })
+
 // console.log(highRating);
 
 //!   SOME AND EVERY (returns true or false)
 // const checkRating = games.every(function(game){
 //    return game.rating > 8;
 // })
+
+// const checkRating = games.every((game) => {
+//    return game.rating > 8;
+// })
+
 // console.log(checkRating);
 
 // const someRating = games.some(function(game){
 //    return game.rating > 8;
 // })
+
+// const someRating = games.some((game) => {
+//    return game.rating > 8;
+// })
+
 // console.log(someRating);
 
 //! ARROW FUNCTIONS (created to make callback functions easier to write)
@@ -133,3 +167,25 @@ const games = [
 //    return video.length < 7 ? video : 'Too Long'
 // })
 // console.log(arrowVideos);
+
+//! SORT (array method)
+
+const items = ['Banana', 'Orange', 'Apple', 'Mango'];
+const ratings = [92, 56, 4, 2, 22, 45.6, 10, 80];
+
+items.sort()      //!   SORT() SORTS STRINGS IN ALPHABETICAL ORDER
+console.log(items);
+
+// ratings.sort()    //! SORT() DOES NOT WORK SO WELL WITH NUMBERS
+// console.log(ratings);
+
+
+//* COMPARE FUNCTION SUBTRACTS A FROM B AND SORTS THE NUMBERS
+//* - if the return is negative, a is placed before b.
+//* - if the return is positive, b is placed before a.
+//* - if the arguments are equal, nothing changes.
+ratings.sort((a,b) => {    
+   return a - b;
+})
+
+console.log(ratings);
