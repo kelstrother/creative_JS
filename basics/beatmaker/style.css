@@ -6,15 +6,18 @@
 }
 body {
    background-color: rgb(17, 17, 17);
-   color: rgb(169, 183, 187);
+   color: rgb(190, 217, 224);
    font-family: 'cabin sketch';
+}
+.container {
+   min-height: 100vh;
 }
 .header {
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   padding: 5rem 0 4rem 0;
+   padding: 3rem 0 0 0;
 }
 .title {
    /* border: 2px outset rgb(255, 237, 79); */
@@ -26,4 +29,121 @@ body {
    color: rgb(37, 211, 255);
    font-size: 6rem;
    letter-spacing: 4px;
+}
+i, svg {
+   pointer-events: none;
+}
+.kick-pad, .snare-pad, .hihat-pad {
+   width: 5rem;
+   height: 5rem;
+   margin: 0.75rem 0.5rem;
+   cursor: pointer;
+}
+
+.sequencer {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   min-height: 70vh;
+}
+
+.kick, .snare, .hihat {
+   display: flex;
+}
+.kick-track, .snare-track, .hihat-track {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   width: 70%;
+   margin-top: 4rem;
+}
+.controls {
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+
+}
+.control-container {
+   margin-bottom: 1rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   width: 60%;
+   height: 4.5rem;
+}
+select {
+   padding: 0.45rem;
+   color: #fff;
+   font-family: 'poppins';
+   font-weight: 400;
+   font-size: 0.85rem;
+   letter-spacing: 0.8px;
+   border: none;
+   width: auto;
+}
+#kick-select {
+   background: rgba(0, 183, 255, 0.4);
+}
+#snare-select {
+   background: rgba(238, 255, 0, 0.4);
+}
+#hihat-select {
+   background: rgba(166, 70, 255, 0.4);
+}
+.mute {
+   margin: 0 1rem 0 1rem;
+   width: 2.5rem;
+   height: 2.5rem;
+   border: 1px outset rgba(202, 13, 13, 0.651);
+   border-radius: 0.75rem;
+   background: rgb(32, 32, 32);
+   color: rgba(221, 11, 11, 0.726);
+   cursor: pointer;
+   transition: all 0.25s;
+}
+.pad {
+   transition: all 0.25s ease;
+}
+.kick-pad {
+   background-color: transparent;
+   border: 2px outset rgb(0, 174, 255);
+}
+.kick-pad.active {
+   border: 3px outset rgb(0, 132, 255);
+}
+.snare-pad {
+   background-color: transparent;
+   border: 2px outset rgb(255, 230, 0);
+}
+.snare-pad.active {
+   background-color: transparent;
+   border: 3px outset rgb(255, 217, 0);
+}
+.hihat-pad {
+   background-color: transparent;
+   border: 2px outset rgb(153, 0, 255);
+}
+.hihat-pad.active {
+   background-color: transparent;
+   border: 3px outset rgb(195, 0, 255);
+}
+.play-container {
+   display: flex;
+   width: 15%;
+   justify-content: flex-end;
+   align-items: center;
+}
+.play {
+   width: 6rem;
+   height: 6rem;
+   border-radius: 50%;
+   border: 1px outset rgb(128, 255, 0);
+   background: transparent;
+   color: rgb(128, 255, 0);
+   font-family: 'poppins';
+   font-weight: 900;
+   font-size: 1.25rem;
+
 }
