@@ -212,25 +212,25 @@ const videos = [
 
 //? USING THE SPREAD OPERATOR TO CREATE COPIES SO NOT TO MODIFY ORIGINAL
 
-const ratings = [92, 56, 4, 2, 22, 45.6, 10, 80];
+// const ratings = [92, 56, 4, 2, 22, 45.6, 10, 80];
 
-const descRating = [...ratings]
+// const descRating = [...ratings]
 
-const ascRating = [...ratings]
+// const ascRating = [...ratings]
 
 
-// descRating.sort((a,b) => b - a);       //^ very short way to write it
+// // descRating.sort((a,b) => b - a);       //^ very short way to write it
 
-descRating.sort((a,b) => {             //& standard arrow function
-  return b - a;
-});
+// descRating.sort((a,b) => {             //& standard arrow function
+//   return b - a;
+// });
 
-ascRating.sort((a,b) => a - b);     //^ very short way to write it
+// ascRating.sort((a,b) => a - b);     //^ very short way to write it
 
-// ascRating.sort((a,b) => {        //& standard arrow function
-//    return a - b;
-// })
+// // ascRating.sort((a,b) => {        //& standard arrow function
+// //    return a - b;
+// // })
 
-console.log("original ratings", ratings);
-console.log("descending ratings", descRating);
-console.log("ascending ratings", ascRating);
+// console.log("original ratings", ratings);
+// console.log("descending ratings", descRating);
+// console.log("ascending ratings", ascRating);
