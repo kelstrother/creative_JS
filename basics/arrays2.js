@@ -26,14 +26,14 @@ const videos = [
    "ui/ux"
 ];
 
-const games = [
-   {title: 'The Last of Us', rating: 10 },
-   {title: 'Fallout 4', rating: 9.5 },
-   {title: 'Legos', rating: 6 },
-   {title: "No Man's Sky", rating: 9.5 },
-   {title: 'Destiny 2', rating: 9 },
-   {title: 'Sonic', rating: 3 }
-];
+// const games = [
+//    {title: 'The Last of Us', rating: 10 },
+//    {title: 'Fallout 4', rating: 9.5 },
+//    {title: 'Legos', rating: 6 },
+//    {title: "No Man's Sky", rating: 9.5 },
+//    {title: 'Destiny 2', rating: 9 },
+//    {title: 'Sonic', rating: 3 }
+// ];
 
 //& ARRAY METHODS
 
@@ -170,22 +170,67 @@ const games = [
 
 //! SORT (array method)
 
-const items = ['Banana', 'Orange', 'Apple', 'Mango'];
-const ratings = [92, 56, 4, 2, 22, 45.6, 10, 80];
+// const items = ['Banana', 'Orange', 'Apple', 'Mango'];
+// const ratings = [92, 56, 4, 2, 22, 45.6, 10, 80];
 
-items.sort()      //!   SORT() SORTS STRINGS IN ALPHABETICAL ORDER
-console.log(items);
+// items.sort()      //!   SORT() SORTS STRINGS IN ALPHABETICAL ORDER
+// console.log(items);
+
 
 // ratings.sort()    //! SORT() DOES NOT WORK SO WELL WITH NUMBERS
 // console.log(ratings);
-
 
 //* COMPARE FUNCTION SUBTRACTS A FROM B AND SORTS THE NUMBERS
 //* - if the return is negative, a is placed before b.
 //* - if the return is positive, b is placed before a.
 //* - if the arguments are equal, nothing changes.
-ratings.sort((a,b) => {    
-   return a - b;
-})
+// ratings.sort((a,b) => {    
+//    return a - b;
+// })
+// console.log(ratings);
 
-console.log(ratings);
+// const games = [
+//   { title: "The Last of Us", rating: 10 },
+//   { title: "Fallout 4", rating: 9.5 },
+//   { title: "Legos", rating: 6 },
+//   { title: "No Man's Sky", rating: 9.5 },
+//   { title: "Destiny 2", rating: 9 },
+//   { title: "Sonic", rating: 3 },
+// ];
+
+//* SORT THE ARRAY OF GAMES BY ASCENDING RATING
+
+// games.sort((a, b) => {
+//    return a.rating - b.rating;
+// });
+// console.log(games);
+
+
+//*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+//!\\\\\\\\\\\\\\\\ CREATING COPIES OF ARRAYS   ////////////////////////////
+//*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+//? USING THE SPREAD OPERATOR TO CREATE COPIES SO NOT TO MODIFY ORIGINAL
+
+const ratings = [92, 56, 4, 2, 22, 45.6, 10, 80];
+
+const descRating = [...ratings]
+
+const ascRating = [...ratings]
+
+
+// descRating.sort((a,b) => b - a);       //^ very short way to write it
+
+descRating.sort((a,b) => {             //& standard arrow function
+  return b - a;
+});
+
+ascRating.sort((a,b) => a - b);     //^ very short way to write it
+
+// ascRating.sort((a,b) => {        //& standard arrow function
+//    return a - b;
+// })
+
+console.log("original ratings", ratings);
+console.log("descending ratings", descRating);
+console.log("ascending ratings", ascRating);
